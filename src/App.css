@@ -1,0 +1,80 @@
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Asegura que esté detrás del contenido */
+}
+
+body {
+  background-color: white;
+  min-height: 500vh;
+  
+}
+.aviso {
+  color: whitesmoke;
+  font-size: 10REM;
+  text-align: center;
+}
+
+.manrope{
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+/** Modificaciones banner **/
+.banner h1, h2{
+  text-shadow: 0 0 5px white;
+}
+.separador {
+  box-shadow: 0 0 2px white;
+  border-radius: 100%;
+}
+.banner hr {
+  box-shadow: 1px -2px 4px white;
+  border-radius: 100%;
+}
+/** Inicio de animacion estrellas **/
+.stars {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.star {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  box-shadow: 0 0 5px white;
+  opacity: 0;
+  border-radius: 100%;
+  background: white;
+  animation: starAnim .8s ease-in 0s infinite alternate;
+}
+.star1 { top: 8%; left: 15%; animation-delay: 0s; animation-duration: 2s;}
+.star2 { top: 30%; left: 60%; animation-delay: 2s; animation-duration: 2.6s;}
+.star3 { top: 68%; left: 76%; animation-delay: 2.5s; animation-duration: 3s;}
+.star4 { top: 82%; left: 13%; animation-delay: 4s; animation-duration: 2.2s;}
+.star5 { top: 57%; left: 91%; animation-delay: 6s; animation-duration: 1.8s;}
+.star6 { top: 14%; left: 92%; animation-delay: 7.5s; animation-duration: 2.8s;}
+.star7 { top: 48%; left: 37%; animation-delay: 10s; animation-duration: 1.8s;}
+.star8 { top: 80%; left: 92%; animation-delay: 1.5s; animation-duration: 2.8s;}
+.star9 { top: 28%; left: 86%; animation-delay: 5s; animation-duration: 1.8s;}
+.star10 { top: 87%; left: 43%; animation-delay: 8s; animation-duration: 2.5s;}
+
+@keyframes starAnim {
+  10% {opacity: .10;}
+  30% {opacity: .30;}
+  50% {opacity: .50;}
+  70% {opacity: .70;}
+  90% {opacity: .90;}
+  100% {opacity: 1;}
+}
+
+/** Final de animacion estrellas **/

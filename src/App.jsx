@@ -13,7 +13,7 @@ function App() {
         <h3 className="text-center text-white text-2xl">Proyectos</h3>
       </section>
       <section>
-        <p className="aviso">PORTAFOLIO EN TRABAJO</p>
+        <p className="aviso">PORTAFOLIO EN DESARROLLO</p>
       </section>
     </>
   );

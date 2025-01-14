@@ -84,12 +84,8 @@ function BlackHole() {
     scene.add(pointLight, ambientLight);
 
     // Luna
-    const moonTexture = new THREE.TextureLoader().load(
-      "/src/assets/img/moon.jpg"
-    );
-    const normalTexture = new THREE.TextureLoader().load(
-      "/src/assets/img/normal.jpg"
-    );
+    const moonTexture = new THREE.TextureLoader().load("/public/moon.jpg");
+    const normalTexture = new THREE.TextureLoader().load("/public/normal.jpg");
     const moon = new THREE.Mesh(
       new THREE.SphereGeometry(3, 32, 32),
       new THREE.MeshStandardMaterial({
@@ -103,9 +99,7 @@ function BlackHole() {
     moon.position.setX(-10);
 
     // Planeta
-    const planetTexture = new THREE.TextureLoader().load(
-      "/src/assets/img/planet.jpg"
-    );
+    const planetTexture = new THREE.TextureLoader().load("/public/planet.jpg");
     const planet = new THREE.Mesh(
       new THREE.SphereGeometry(5, 32, 32),
       new THREE.MeshStandardMaterial({
@@ -115,7 +109,7 @@ function BlackHole() {
     );
     scene.add(planet);
 
-    planet.position.z = 50;
+    planet.position.z = 40;
     planet.position.setX(30);
     // Funcion para agregar estrellas de forma aleatoria
     function addStar() {
@@ -133,9 +127,7 @@ function BlackHole() {
 
     Array(200).fill().forEach(addStar);
     // Agregar textura al fondo de la escena
-    const spaceTexture = new THREE.TextureLoader().load(
-      "/src/assets/img/universe.jpg"
-    );
+    const spaceTexture = new THREE.TextureLoader().load("/public/universe.jpg");
     scene.background = spaceTexture;
 
     // Controles

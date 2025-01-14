@@ -9,7 +9,7 @@ canvas {
 
 body {
   background-color: white;
-  min-height: 500vh;
+  min-height: 800vh;
   
 }
 .aviso {
@@ -36,8 +36,8 @@ body {
   box-shadow: 1px -2px 4px white;
   border-radius: 100%;
 }
-/** Inicio de animacion estrellas **/
-.stars {
+/* * Inicio de animacion estrellas **/
+/* .stars {
   position: fixed;
   top: 0;
   left: 0;
@@ -75,6 +75,6 @@ body {
   70% {opacity: .70;}
   90% {opacity: .90;}
   100% {opacity: 1;}
-}
+} */
 
-/** Final de animacion estrellas **/
+/** Final de animacion estrellas * */

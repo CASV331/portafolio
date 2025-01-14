@@ -45,7 +45,7 @@ export default function Header() {
             <h1 className="md:flex text-center text-white md:justify-center text-4xl md:text-5xl">
               César Sandoval {""}
               <div className="separador ml-2 bg-white w-1" />
-              <span className="font-bold px-2">Web Dev</span>
+              <span className="font-bold px-2">Desarrollador web</span>
             </h1>
             <hr className="bg-white w-full h-0.5 md:h-1 mt-5" />
             <h2 className="mt-12 mb-5 text-white text-center text-2xl md:text-4xl">

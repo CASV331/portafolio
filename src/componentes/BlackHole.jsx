@@ -144,6 +144,7 @@ function BlackHole() {
       planet.rotation.y += 0.0005;
       planet.rotation.z += 0.0009;
 
+      moon.rotation.z += 0.003;
       distortionPass.uniforms.u_time.value += 0.01;
 
       controls.update();

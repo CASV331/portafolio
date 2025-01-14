@@ -12,10 +12,10 @@ function BlackHole() {
     // Escena y cámara
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(
-      75,
+      70,
       window.innerWidth / window.innerHeight,
       0.1,
-      1000
+      500
     );
 
     // Renderizador
@@ -24,8 +24,8 @@ function BlackHole() {
     });
     render.setPixelRatio(window.devicePixelRatio);
     render.setSize(window.innerWidth, window.innerHeight);
-    document.body.appendChild(render.domElement);
-    camera.position.setZ(30);
+    render.setClearColor(0x000000, 1); // Fondo negro opaco
+    camera.position.setZ(5);
 
     // Compositor y RenderPass
     const composer = new EffectComposer(render);
@@ -79,8 +79,8 @@ function BlackHole() {
     // scene.add(torus);
 
     // Iluminación
-    const pointLight = new THREE.PointLight(0xffffff, 200, 100);
-    pointLight.position.set(0, 20, 5);
+    const pointLight = new THREE.PointLight(0xffffff, 80, 100);
+    pointLight.position.set(-5, 0, 30);
     const ambientLight = new THREE.AmbientLight(0xffffff, 2);
     scene.add(pointLight, ambientLight);
 
@@ -88,7 +88,7 @@ function BlackHole() {
     const moonTexture = new THREE.TextureLoader().load("/moon.jpg");
     // const normalTexture = new THREE.TextureLoader().load("/normal.jpg");
     const moon = new THREE.Mesh(
-      new THREE.SphereGeometry(3, 32, 32),
+      new THREE.SphereGeometry(1, 20, 20),
       new THREE.MeshStandardMaterial({
         map: moonTexture,
       })
@@ -101,15 +101,16 @@ function BlackHole() {
     // Planeta
     const planetTexture = new THREE.TextureLoader().load("/planet.jpg");
     const planet = new THREE.Mesh(
-      new THREE.SphereGeometry(5, 32, 32),
+      new THREE.SphereGeometry(5, 70, 70),
       new THREE.MeshStandardMaterial({
         map: planetTexture,
       })
     );
     scene.add(planet);
 
-    planet.position.z = 40;
-    planet.position.setX(30);
+    planet.position.z = -25;
+    planet.position.setX(20);
+    planet.position.setY(0);
     // Funcion para agregar estrellas de forma aleatoria
     function addStar() {
       const geometry = new THREE.SphereGeometry(0.25, 24, 24);
@@ -126,7 +127,10 @@ function BlackHole() {
 
     Array(200).fill().forEach(addStar);
     // Agregar textura al fondo de la escena
-    const spaceTexture = new THREE.TextureLoader().load("/universe.jpg");
+    const spaceTexture = new THREE.TextureLoader().load("/universe.png");
+
+    spaceTexture.minFilter = THREE.LinearFilter; // Suaviza al reducir la textura
+    spaceTexture.magFilter = THREE.LinearFilter; // Suaviza al ampliar la textura
     scene.background = spaceTexture;
 
     // Controles
@@ -136,9 +140,9 @@ function BlackHole() {
     function animate() {
       requestAnimationFrame(animate);
 
-      planet.rotation.x += 0.001;
-      planet.rotation.y += 0.005;
-      planet.rotation.z += 0.01;
+      planet.rotation.x += 0.0005;
+      planet.rotation.y += 0.0005;
+      planet.rotation.z += 0.0009;
 
       distortionPass.uniforms.u_time.value += 0.01;
 
@@ -169,14 +173,14 @@ function BlackHole() {
 
     // Ajustar al redimensionar
     window.addEventListener("resize", () => {
-      render.setSize(window.innerWidth, window.innerHeight);
-      camera.aspect = window.innerWidth / window.innerHeight;
+      const width = window.innerWidth;
+      const height = window.innerHeight;
+
+      render.setSize(width, height);
+      camera.aspect = width / height;
       camera.updateProjectionMatrix();
 
-      distortionPass.uniforms.u_resolution.value.set(
-        window.innerWidth,
-        window.innerHeight
-      );
+      distortionPass.uniforms.u_resolution.value.set(width, height);
     });
 
     return () => {

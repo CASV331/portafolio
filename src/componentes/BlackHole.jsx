@@ -24,6 +24,7 @@ function BlackHole() {
     });
     render.setPixelRatio(window.devicePixelRatio);
     render.setSize(window.innerWidth, window.innerHeight);
+    document.body.appendChild(render.domElement);
     camera.position.setZ(30);
 
     // Compositor y RenderPass

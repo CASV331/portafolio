@@ -9,10 +9,9 @@ function App() {
     <>
       <BlackHole />
       <Stars />
-      <Banner />
-      <section className="proyectos h-screen justify-center bg-none mt-14 p-10">
-        <h3 className="text-center text-white text-2xl">Proyectos</h3>
-      </section>
+      <main className="content">
+        <Banner />
+      </main>
     </>
   );
 }

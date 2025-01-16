@@ -125,7 +125,7 @@ function BlackHole() {
       scene.add(star);
     }
 
-    Array(200).fill().forEach(addStar);
+    Array(50).fill().forEach(addStar);
     // Agregar textura al fondo de la escena
     const spaceTexture = new THREE.TextureLoader().load("/universe.png");
 

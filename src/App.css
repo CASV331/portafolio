@@ -2,10 +2,11 @@ canvas {
   position: fixed;
   top: 0;
   left: 0;
+  right: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
-  
+  z-index: -2;
+  pointer-events: none;
 }
 
 body {
@@ -13,12 +14,10 @@ body {
   min-height: 800vh;
   
 }
-.aviso {
-  color: whitesmoke;
-  font-size: 10REM;
-  text-align: center;
-}
 
+.content {
+  z-index: 10;
+}
 .manrope{
   font-family: "Manrope", sans-serif;
   font-optical-sizing: auto;
@@ -45,7 +44,7 @@ body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  z-index: 0;
+  z-index: -1;
 }
 
 .star {
@@ -79,3 +78,7 @@ body {
 }
 
 /** Final de animacion estrellas * */
+
+a:hover {
+  cursor: pointer;
+}

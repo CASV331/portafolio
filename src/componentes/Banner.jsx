@@ -47,9 +47,7 @@ export default function Header() {
             <span className="font-bold px-2 web">Desarrollador web</span>
           </h1>
           <hr className="bg-white w-full h-0.5 md:h-1 mt-5" />
-          <h2 className="mt-12 mb-5 text-white text-center text-2xl md:text-4xl">
-            Acerca de mi
-          </h2>
+          <h2 className="">Acerca de mi</h2>
           <p className="text-white text-xl text-center">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis,
             voluptate, recusandae ab nulla fugiat voluptatibus autem. Lorem

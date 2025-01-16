@@ -85,8 +85,8 @@ function BlackHole() {
     scene.add(pointLight, ambientLight);
 
     // Luna
-    const moonTexture = new THREE.TextureLoader().load("/moon.jpg");
-    // const normalTexture = new THREE.TextureLoader().load("/normal.jpg");
+    const moonTexture = new THREE.TextureLoader().load("/textures/moon.jpg");
+    // const normalTexture = new THREE.TextureLoader().load("/textures/normal.jpg");
     const moon = new THREE.Mesh(
       new THREE.SphereGeometry(1, 20, 20),
       new THREE.MeshStandardMaterial({
@@ -99,7 +99,9 @@ function BlackHole() {
     moon.position.setX(-10);
 
     // Planeta
-    const planetTexture = new THREE.TextureLoader().load("/planet.jpg");
+    const planetTexture = new THREE.TextureLoader().load(
+      "/textures/planet.jpg"
+    );
     const planet = new THREE.Mesh(
       new THREE.SphereGeometry(5, 70, 70),
       new THREE.MeshStandardMaterial({
@@ -127,7 +129,9 @@ function BlackHole() {
 
     Array(50).fill().forEach(addStar);
     // Agregar textura al fondo de la escena
-    const spaceTexture = new THREE.TextureLoader().load("/universe.png");
+    const spaceTexture = new THREE.TextureLoader().load(
+      "/textures/universe.png"
+    );
 
     spaceTexture.minFilter = THREE.LinearFilter; // Suaviza al reducir la textura
     spaceTexture.magFilter = THREE.LinearFilter; // Suaviza al ampliar la textura

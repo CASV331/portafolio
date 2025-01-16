@@ -17,16 +17,17 @@ const MouseFollower = () => {
   return (
     <>
       <div
+        className="mouseP"
         style={{
           position: "absolute",
-          backgroundColor: "rgba(255, 255, 255, 1.0)",
+          backgroundColor: "rgba(0, 0, 0, 1.0)",
           borderRadius: "50%",
-          opacity: 0.8,
+          opacity: 1,
           pointerEvents: "none",
-          left: -20,
-          top: -20,
-          width: 40,
-          height: 40,
+          left: -10,
+          top: -10,
+          width: 20,
+          height: 20,
           blur: 100,
           transform: `translate(${position.x}px, ${position.y}px)`,
         }}

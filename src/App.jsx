@@ -4,8 +4,10 @@ import Stars from "./componentes/Stars";
 import Mouse from "./componentes/MouseP";
 import BlackHole from "./componentes/BlackHole";
 import Skills from "./componentes/Skills";
+import db from "./assets/db.json";
 
 function App() {
+  const { proyectos, skills } = db;
   return (
     <>
       <BlackHole />
@@ -13,7 +15,18 @@ function App() {
       <Mouse />
       <main className="content">
         <Banner />
-        <Skills />
+        <section className="text-center">
+          <h2 className="">Habilidades</h2>
+          <div className="contenedorSkills">
+            {skills.map((skill) => (
+              <Skills
+                key={skill.id}
+                skill={skill.nombre}
+                image={skill.imagen}
+              />
+            ))}
+          </div>
+        </section>
       </main>
     </>
   );

@@ -2,7 +2,7 @@ import "../App.css";
 export default function Header() {
   return (
     <>
-      <header className="flex justify-end gap-2 ">
+      <header className="flex justify-end gap-2">
         {/* <a
             target="_blank"
             href="https://www.linkedin.com/in/cesar-arturo-sandoval-velasco-719bb02a2/"

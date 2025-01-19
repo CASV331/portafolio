@@ -8,13 +8,15 @@ canvas {
   z-index: -2;
   pointer-events: none;
 }
-
+main {
+  margin: 0px auto;
+  z-index: 10;
+}
 body {
   background-color: white;
   min-height: 800vh;
   
 }
-
 h2 {
   font-size: 1.8rem;
   line-height: 2rem;
@@ -30,19 +32,48 @@ h2 {
 .mouseP {
   z-index: -1;
 }
-
-main {
-  margin: 0px auto;
-  padding: 50px 0px;
-  z-index: 10;
-}
 .manrope{
   font-family: "Manrope", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
 }
+/** Modificaciones de listado de habilidades **/
+.contenedorSkills{
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  margin: 6rem auto;
+  justify-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  padding: 50px;
+}
+.skill {
+  width: auto;
+  max-width: 100px;
+  margin: auto;
+  border: solid 2px white;
+  padding: 10px;
+}
+.skill:hover {
+  animation: zoom normal;
+}
+@keyframes zoom {
+  to{
+    transform: scale(2);
+  }
+}
+.skillImg{
+  margin: auto;
+}
 
 /** Modificaciones banner **/
+.banner {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  padding: 10px;
+}
 .banner h1, h2{
   text-shadow: 0 0 5px white;
 }

@@ -17,12 +17,13 @@ function App() {
         <Banner />
         <section className="text-center">
           <h2 className="">Habilidades</h2>
-          <div className="contenedorSkills">
+          <div className="contenedorSkills m-auto">
             {skills.map((skill) => (
               <Skills
                 key={skill.id}
                 skill={skill.nombre}
                 image={skill.imagen}
+                bgColor={skill.bgColor}
               />
             ))}
           </div>

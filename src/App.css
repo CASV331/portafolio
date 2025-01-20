@@ -39,7 +39,12 @@ h2 {
 }
 /** Modificaciones de listado de habilidades **/
 .contenedorSkills{
+  display: flex;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+  justify-content: center;
   max-width: 800px;
+  /* max-width: 800px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 5px;
@@ -47,25 +52,37 @@ h2 {
   justify-items: center;
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 20px;
-  padding: 50px;
+  padding: 50px; */
 }
 .skill {
-  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   max-width: 100px;
-  margin: auto;
+  max-height: 100px;
   border: solid 2px white;
   padding: 10px;
+  background-color: transparent;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
 }
 .skill:hover {
-  animation: zoom normal;
+  transform: scale(1.2);
+  background-color: var(--bg-color);
 }
-@keyframes zoom {
-  to{
-    transform: scale(2);
-  }
+.skill:hover h3{
+  display: contents;
 }
-.skillImg{
-  margin: auto;
+
+.skillImg {
+  width: 50px;
+  height: 50px;
+  transition: filter 0.3s ease;
+}
+
+.skill:hover .skillImg {
+  filter: invert(1)
 }
 
 /** Modificaciones banner **/

@@ -10,75 +10,90 @@
     ],
 
     "skills": [
-        {
-            "id": 1,
-            "nombre": "HTML",
-            "imagen": "/skills/html.svg"
-        },
-        {
-            "id": 2,
-            "nombre": "CSS",
-            "imagen": "/skills/css.svg"
-        },
-        {
-            "id": 3,
-            "nombre": "JavaScript",
-            "imagen": "/skills/javascript.svg"
-        },
-        {
-            "id": 4,
-            "nombre": "React",
-            "imagen": "/skills/react.svg"
-        },
-        {
-            "id": 5,
-            "nombre": "PHP",
-            "imagen": "/skills/php.svg"
-        },
-        {
-            "id": 6,
-            "nombre": "Node",
-            "imagen": "/skills/node.svg"
-        },
-        {
-            "id": 7,
-            "nombre": "Tailwind",
-            "imagen": "/skills/tailwind.svg"
-        },
-        {
-            "id": 8,
-            "nombre": "Bootstrap",
-            "imagen": "/skills/bootstrap.svg"
-        },
-        {
-            "id": 9,
-            "nombre": "Mysql",
-            "imagen": "/skills/mysql.svg"
-        },
-        {
-            "id": 10,
-            "nombre": "Mongo",
-            "imagen": "/skills/mongodb.svg"
-        },
-        {
-            "id": 11,
-            "nombre": "Github",
-            "imagen": "/skills/github.svg"
-        },
-        {
-            "id": 12,
-            "nombre": "Linux",
-            "imagen": "/skills/linux.svg"
-        },
-        {
-            "id": 13,
-            "nombre": "Vercel",
-            "imagen": "/skills/vercel.svg"
-        },
-        {
-            "id": 14,
-            "nombre": "VS Code",
-            "imagen": "/skills/vscode.svg"
-        }
-    ]
+    {
+        "id": 1,
+        "nombre": "HTML",
+        "imagen": "/skills/html.svg",
+        "bgColor": "#E44D26"
+    },
+    {
+        "id": 2,
+        "nombre": "CSS",
+        "imagen": "/skills/css.svg",
+        "bgColor": "#1572B6"
+    },
+    {
+        "id": 3,
+        "nombre": "JavaScript",
+        "imagen": "/skills/javascript.svg",
+        "bgColor": "#F7DF1E"
+    },
+    {
+        "id": 4,
+        "nombre": "React",
+        "imagen": "/skills/react.svg",
+        "bgColor": "#61DAFB"
+    },
+    {
+        "id": 5,
+        "nombre": "PHP",
+        "imagen": "/skills/php.svg",
+        "bgColor": "#787CB5"
+    },
+    {
+        "id": 6,
+        "nombre": "Node",
+        "imagen": "/skills/node.svg",
+        "bgColor": "#339933"
+    },
+    {
+        "id": 7,
+        "nombre": "Tailwind",
+        "imagen": "/skills/tailwind.svg",
+        "bgColor": "#06B6D4"
+    },
+    {
+        "id": 8,
+        "nombre": "Bootstrap",
+        "imagen": "/skills/bootstrap.svg",
+        "bgColor": "#7952B3"
+    },
+    {
+        "id": 9,
+        "nombre": "Mysql",
+        "imagen": "/skills/mysql.svg",
+        "bgColor": "#00758F"
+    },
+    {
+        "id": 10,
+        "nombre": "Mongo",
+        "imagen": "/skills/mongodb.svg",
+        "bgColor": "#47A248"
+    },
+    {
+        "id": 11,
+        "nombre": "Github",
+        "imagen": "/skills/github.svg",
+        "bgColor": "#c6c6c6"
+    },
+    {
+        "id": 12,
+        "nombre": "Linux",
+        "imagen": "/skills/linux.svg",
+        "bgColor": "#FCC624"
+    },
+    {
+        "id": 13,
+        "nombre": "Vercel",
+        "imagen": "/skills/vercel.svg",
+        "bgColor": "#70639b"
+    },
+    {
+        "id": 14,
+        "nombre": "VS Code",
+        "imagen": "/skills/vscode.svg",
+        "bgColor": "#007ACC"
+    }
+]
+
 }

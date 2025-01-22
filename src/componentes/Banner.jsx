@@ -25,7 +25,7 @@ export default function Header() {
           </a> */}
         <a target="_blak" href="https://github.com/CASV331" className="p-3">
           <svg
-            className="w-8 h-8 md:w-10 md:h-10 text-gray-800 dark:text-white"
+            className="w-10 h-10 md:w-14 md:h-14 text-gray-800 dark:text-white"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="currentColor"
@@ -43,12 +43,12 @@ export default function Header() {
         <div className=" max-w-6xl mx-auto mt-2 md:mt-10 p-5 md:p-10">
           <h1 className="md:flex text-center text-white md:justify-center text-5xl md:text-6xl">
             César Sandoval {""}
-            {/* <div className="separador ml-2 bg-white w-1" /> */}
+            <div className="separador ml-2 bg-white w-1" />
             <span className="font-bold px-2 web">Desarrollador web</span>
           </h1>
           <hr className="bg-white w-full h-0.5 md:h-1 mt-5" />
-          <h2 className="mt-72">Acerca de mi</h2>
-          <p className="text-white text-xl text-center">
+          <h2 className="mt-40 text-3xl md:text-4xl">Acerca de mi</h2>
+          <p className="text-white text-lg text-center m-auto max-w-4xl md:text-2xl">
             Soy un desarrollador web con más de un año de experiencia en diseño
             web y programación. He trabajado con tecnologías como HTML, CSS,
             JavaScript, Tailwind, Bootstrap y React para crear interfaces de

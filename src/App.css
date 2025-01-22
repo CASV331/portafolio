@@ -14,7 +14,7 @@ main {
 }
 body {
   background-color: white;
-  min-height: 800vh;
+  min-height: 450vh;
   
 }
 h2 {
@@ -39,7 +39,7 @@ h2 {
 }
 /** Modificaciones de listado de habilidades **/
 .skillSect{
-  margin-top: 50rem;
+  margin-top: 20rem;
 }
 .contenedorSkills{
   display: flex;

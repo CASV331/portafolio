@@ -8,6 +8,8 @@ import {
 } from "three/examples/jsm/Addons.js";
 
 function BlackHole() {
+  const width = window.innerWidth;
+  const height = window.innerHeight;
   useEffect(() => {
     // Escena y cámara
     const scene = new THREE.Scene();
@@ -79,8 +81,12 @@ function BlackHole() {
     // scene.add(torus);
 
     // Iluminación
-    const pointLight = new THREE.PointLight(0xffffff, 80, 100);
-    pointLight.position.set(-5, 0, 30);
+    const pointLight = new THREE.PointLight(0xffffff, 800, 1000);
+    if (width <= 768) {
+      pointLight.position.set(4, 0, 2);
+    } else {
+      pointLight.position.set(-2, 0, 8);
+    }
     const ambientLight = new THREE.AmbientLight(0xffffff, 2);
     scene.add(pointLight, ambientLight);
 
@@ -94,9 +100,8 @@ function BlackHole() {
       })
     );
     scene.add(moon);
-
-    moon.position.z = 30;
-    moon.position.setX(-10);
+    width < 768 ? (moon.position.z = 2) : (moon.position.z = 14);
+    width < 768 ? moon.position.setX(-4) : moon.position.setX(-10);
 
     // Planeta
     const planetTexture = new THREE.TextureLoader().load(
@@ -110,12 +115,12 @@ function BlackHole() {
     );
     scene.add(planet);
 
-    planet.position.z = -25;
-    planet.position.setX(20);
+    width < 768 ? (planet.position.z = -40) : (planet.position.z = -25);
+    width < 768 ? planet.position.setX(9) : planet.position.setX(20);
     planet.position.setY(0);
     // Funcion para agregar estrellas de forma aleatoria
     function addStar() {
-      const geometry = new THREE.SphereGeometry(0.25, 24, 24);
+      const geometry = new THREE.SphereGeometry(0.1, 24, 24);
       const material = new THREE.MeshStandardMaterial({ color: 0xffffff });
       const star = new THREE.Mesh(geometry, material);
 
@@ -127,7 +132,7 @@ function BlackHole() {
       scene.add(star);
     }
 
-    Array(50).fill().forEach(addStar);
+    Array(100).fill().forEach(addStar);
     // Agregar textura al fondo de la escena
     const spaceTexture = new THREE.TextureLoader().load(
       "/textures/universe.png"

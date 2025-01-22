@@ -17,7 +17,7 @@ function App() {
       <main className="content">
         <Banner />
         <section className="skillSect text-center">
-          <h2 className="">Habilidades</h2>
+          <h2 className="mb-10">Habilidades</h2>
           <div className="contenedorSkills m-auto">
             {skills.map((skill) => (
               <Skills
@@ -29,7 +29,7 @@ function App() {
             ))}
           </div>
         </section>
-        <section className="projectSect">
+        <section className="projectSect mt-60">
           <h2>Proyectos</h2>
           <div>
             {proyectos.map((project) => (

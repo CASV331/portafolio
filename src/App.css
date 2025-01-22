@@ -38,12 +38,18 @@ h2 {
   font-style: normal;
 }
 /** Modificaciones de listado de habilidades **/
+.skillSect{
+  margin-top: 50rem;
+}
 .contenedorSkills{
   display: flex;
   gap: 1.2rem;
   flex-wrap: wrap;
   justify-content: center;
   max-width: 800px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  padding: 50px;  
   /* max-width: 800px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);

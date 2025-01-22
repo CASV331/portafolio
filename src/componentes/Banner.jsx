@@ -41,19 +41,24 @@ export default function Header() {
       </header>
       <section className="banner">
         <div className=" max-w-6xl mx-auto mt-2 md:mt-10 p-5 md:p-10">
-          <h1 className="md:flex text-center text-white md:justify-center text-4xl md:text-5xl">
+          <h1 className="md:flex text-center text-white md:justify-center text-5xl md:text-6xl">
             César Sandoval {""}
-            <div className="separador ml-2 bg-white w-1" />
+            {/* <div className="separador ml-2 bg-white w-1" /> */}
             <span className="font-bold px-2 web">Desarrollador web</span>
           </h1>
           <hr className="bg-white w-full h-0.5 md:h-1 mt-5" />
-          <h2 className="">Acerca de mi</h2>
+          <h2 className="mt-72">Acerca de mi</h2>
           <p className="text-white text-xl text-center">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis,
-            voluptate, recusandae ab nulla fugiat voluptatibus autem. Lorem
-            ipsum dolor sit, amet consectetur adipisicing elit. Eum non
-            inventore incidunt aliquid, nesciunt, excepturi totam, ab adipisci
-            eligendi perferendis et.
+            Soy un desarrollador web con más de un año de experiencia en diseño
+            web y programación. He trabajado con tecnologías como HTML, CSS,
+            JavaScript, Tailwind, Bootstrap y React para crear interfaces de
+            usuario eficientes y atractivas, he implementado Nodejs en algunos
+            de mis proyectos para manejo de paquetes y conexiones backend.
+            Además, estoy constantemente ampliando mis conocimientos por lo que
+            he desarrollado proyectos con PHP y he utilizado plataformas como
+            Vercel, Render y Netlify. Busco oportunidades para aplicar mis
+            habilidades en un entorno colaborativo, donde pueda crecer como
+            desarrollador y contribuir al éxito del equipo.
           </p>
         </div>
       </section>

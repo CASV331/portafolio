@@ -1,10 +1,19 @@
 {
     "proyectos": [
         {
-            "nombre": "",
-            "imagen": "",
-            "techStack": "",
-            "descripcion": "", 
+            "id":1,
+            "nombre": "CRM Usuarios",
+            "imagenes": "",
+            "techStack": "PHP, HTML, Bootstrap, JavaScript",
+            "descripcion": "CRM Hecho con el patron de diseño Modelo Vista Controlador y programacion orientada a objetos. ", 
+            "enlace": ""
+        },
+        {
+            "id":2,
+            "nombre": "CRM pacientes de veterinaria",
+            "imagenes": "",
+            "techStack": "HTML, React, Tailwind, JavaScript, Express",
+            "descripcion": "CRM Hecho con el patron de diseño Modelo Vista Controlador y programacion orientada a objetos. ", 
             "enlace": ""
         }
     ],

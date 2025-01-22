@@ -1,7 +1,7 @@
 import "../App";
 
-function skills(skills) {
-  const { skill, image, bgColor } = skills;
+function skills(db) {
+  const { skill, image, bgColor } = db;
   return (
     <div
       className="skill p-3 w-max-16 md:w-32 h-auto h-max-16 md:h-32 md:h-max-32"

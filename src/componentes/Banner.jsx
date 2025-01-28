@@ -23,7 +23,11 @@ export default function Header() {
               <path d="M7.2 8.809H4V19.5h3.2V8.809Z" />
             </svg>
           </a> */}
-        <a target="_blak" href="https://github.com/CASV331" className="p-3">
+        <a
+          target="_blak"
+          href="https://github.com/CASV331"
+          className="p-3 cursor-pointer"
+        >
           <svg
             className="w-10 h-10 md:w-14 md:h-14 text-gray-800 dark:text-white"
             aria-hidden="true"

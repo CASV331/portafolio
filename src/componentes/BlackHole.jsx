@@ -85,7 +85,7 @@ function BlackHole() {
     if (width <= 768) {
       pointLight.position.set(4, 0, 2);
     } else {
-      pointLight.position.set(-2, 0, 8);
+      pointLight.position.set(2, 0, 8);
     }
     const ambientLight = new THREE.AmbientLight(0xffffff, 2);
     scene.add(pointLight, ambientLight);

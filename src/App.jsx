@@ -29,9 +29,9 @@ function App() {
             ))}
           </div>
         </section>
-        <section className="projectSect mt-60">
-          <h2>Proyectos</h2>
-          <div>
+        <section className="projectSect flex-row mt-60 justify-center">
+          <h2 className="text-white">Proyectos</h2>
+          <div className="contenedorProjects m-auto max-w-6xl flex gap-3">
             {proyectos.map((project) => (
               <Projects
                 key={project.id}

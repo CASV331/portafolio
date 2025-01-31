@@ -36,14 +36,16 @@ function Projects({ nombre, imagenes, techStack, descripcion, enlace }) {
           ))}
         </ul>
         <div className="flex flex-row-reverse justify-between">
-          <a
-            href={enlace}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block max-w-xl bg-black text-white text-center px-4 py-2 rounded mt-4 hover:bg-gray-700 transition"
-          >
-            Ver Proyecto
-          </a>
+          {enlace && (
+            <a
+              href={enlace}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block max-w-xl bg-black text-white text-center px-4 py-2 rounded mt-4 hover:bg-gray-700 transition"
+            >
+              Ver Proyecto
+            </a>
+          )}
           <button
             className="bg-red-500 text-white px-4 py-2 rounded mt-4 hover:bg-red-600 transition"
             onClick={() => setModalOpen(false)} // Cierra el modal

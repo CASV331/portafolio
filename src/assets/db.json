@@ -4,7 +4,7 @@
             "id":1,
             "nombre": "CRM Usuarios",
             "imagenes": "projectsImg/crmUsuarios/",
-            "techStack": "PHP, HTML, Bootstrap, JavaScript",
+            "techStack": ["php", "html", "bootstrap", "javascript"],
             "descripcion": "CRM Hecho con el patron de diseño Modelo Vista Controlador y programacion orientada a objetos. ", 
             "enlace": ""
         },
@@ -12,7 +12,7 @@
             "id":2,
             "nombre": "CRM pacientes de veterinaria",
             "imagenes": "projectsImg/crmApv/",
-            "techStack": "HTML, React, Tailwind, JavaScript, Express",
+            "techStack": ["html", "react", "tailwind", "javascript", "express"],
             "descripcion": "CRM Hecho con el patron de diseño Modelo Vista Controlador y programacion orientada a objetos. ", 
             "enlace": ""
         },
@@ -20,7 +20,7 @@
             "id":3,
             "nombre": "CRM Bienesraices",
             "imagenes": "projectsImg/BienesRaices/",
-            "techStack": "HTML, React, Tailwind, JavaScript, Express",
+            "techStack": ["html", "react", "tailwind", "javascript", "express"],
             "descripcion": "CRM Hecho con el patron de diseño Modelo Vista Controlador y programacion orientada a objetos. ", 
             "enlace": ""
         }
@@ -109,6 +109,12 @@
         "id": 14,
         "nombre": "VS Code",
         "imagen": "/skills/vscode.svg",
+        "bgColor": "#007ACC"
+    },
+    {
+        "id": 15,
+        "nombre": "Express",
+        "imagen": "/skills/express.svg",
         "bgColor": "#007ACC"
     }
 ]

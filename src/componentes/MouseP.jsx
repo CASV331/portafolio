@@ -37,11 +37,7 @@ const MouseFollower = () => {
 };
 
 function Mouse() {
-  return (
-    <main>
-      <MouseFollower />
-    </main>
-  );
+  return <MouseFollower />;
 }
 
 export default Mouse;

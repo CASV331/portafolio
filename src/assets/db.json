@@ -20,10 +20,11 @@
       "imagenes": "projectsImg/portafolioImg/",
       "techStack": ["html", "react", "tailwind", "javascript", "css"],
       "descripcion": [
-        "Desarrolle esta pagina web para mostrar mis proyectos mas detacables y aplicar mis conocimientos sobre diseño web",
+        "Desarrolle esta pagina web para mostrar mis proyectos, demostrar mi experiencia y aplicar mis conocimientos sobre diseño web",
         "En este proyecto implemente la libreria TrheeJS, que permite programar con JavaScript escenarios 3D, y modificar los parametros de cada uno de sus componentes",
         "El diseño del proyecto fue hecho con Tailwind y CSS; para lograr un diseño atractivo, dinamico y ajustable a todo tipo de dispositivos",
-        "Utilice React como framework para tener un gran rendimiento, escalabilidad y manejo de recursos y eventos con sus componentes."
+        "Utilice React como framework para tener un gran rendimiento, escalabilidad y manejo de recursos y eventos con sus componentes.",
+        "Implemente el uso de hooks como: useState, useEffect y useRef"
       ],
       "enlace": "https://portafolio-rho-rouge.vercel.app"
     },

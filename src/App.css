@@ -20,7 +20,7 @@ main {
 }
 body {
   background-color: transparent;
-  min-height: 450vh;
+  min-height: 350vh;
   padding-bottom: env(safe-area-inset-bottom);
 }
 h2 {
@@ -35,7 +35,6 @@ h2 {
     
 }
 }
-
 .mouseP {
   z-index: -1;
 }
@@ -89,7 +88,7 @@ h2 {
   filter: invert(1)
 }
 
-/** Modificaciones del proyecto **/
+/** Modificaciones de proyectos **/
 .contenedorProjects {
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 20px;
@@ -104,8 +103,6 @@ header {
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 10px;
   padding: 10px;
-}
-.banner h1, h2{
   text-shadow: 0 0 5px white;
 }
 .separador {
@@ -120,6 +117,30 @@ header {
   animation: flicker 1.7s ease-in-out infinite alternate;
 }
 
+/** Modificacion de ventana modal **/
+body.modal-open {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+.modal-content {
+  max-height: 90vh;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255,255,255, 0.4) transparent;
+}
+.modal-content::-webkit-scrollbar {
+  width: 6px;
+}
+.modal-content::-webkit-scrollbar-track{
+  background: #1a1a1a;
+}
+.modal-content::-webkit-scrollbar-thumb {
+  background: #4f4f4f;
+  border-radius: 4px;
+}
 /* * Inicio de animacion estrellas **/
 .stars {
   position: fixed;
@@ -163,6 +184,7 @@ header {
 
 /** Final de animacion estrellas * */
 
+/** Animacion de titulo **/
 @keyframes flicker {
 0%{
   opacity: 0.7;
@@ -172,5 +194,16 @@ header {
   opacity: 1;
   text-shadow: 0 0 15px;
 }
+}
+.techStakImg {
+  animation: scale, alternate;
+}
+@keyframes scale {
+  0%{
+    width: auto;
+  }
+  100%{
+    width: 40px;
+  }
 }
 

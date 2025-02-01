@@ -31,7 +31,7 @@ function App() {
         </section>
         <section className="projectSect mt-60 justify-center">
           <h2 className="text-white">Proyectos</h2>
-          <div className="contenedorProjects mt-6 m-auto max-w-7xl gap-3 md:flex">
+          <div className="contenedorProjects justify-center mt-6 m-auto max-w-7xl gap-3 md:flex text-center flex-wrap">
             {proyectos.map((project) => (
               <Projects
                 key={project.id}

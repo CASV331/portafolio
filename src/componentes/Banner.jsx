@@ -60,9 +60,9 @@ export default function Header() {
             de mis proyectos para manejo de paquetes y conexiones backend.
             Además, estoy constantemente ampliando mis conocimientos por lo que
             he desarrollado proyectos con PHP y he utilizado plataformas como
-            Vercel, Render y Netlify. Busco oportunidades para aplicar mis
-            habilidades en un entorno colaborativo, donde pueda crecer como
-            desarrollador y contribuir al éxito del equipo.
+            Vercel, Render y Netlify. Busco desafios done pueda aplicar mis
+            habilidades en un entorno colaborativo, y crecer como desarrollador
+            contribuyendo al éxito del equipo.
           </p>
         </div>
       </section>

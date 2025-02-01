@@ -1,19 +1,59 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 
 const Modal = ({ isOpen, onClose, children }) => {
+  const modalContentRef = useRef(null);
+  let initialY = 0;
+
+  useEffect(() => {
+    const handleBodyScroll = (e) => {
+      document.body.style.overflow = isOpen ? "hidden" : "";
+      document.body.style.touchAction = isOpen ? "none" : "";
+    };
+
+    const handleTouchStart = (e) => {
+      initialY = e.touches[0].clientY;
+    };
+
+    const handleTouchMove = (e) => {
+      if (!isOpen) return;
+
+      const currentY = e.touches[0].clientY;
+      const modalContent = modalContentRef.current;
+
+      if (modalContent) {
+        const isScrollingUp = initialY > currentY;
+        const isScrollingDown = initialY < currentY;
+        const isAtTop = modalContent.scrollTop === 0;
+        const isAtBottom =
+          modalContent.scrollTop + modalContent.clientHeight >=
+          modalContent.scrollHeight;
+
+        if ((isScrollingDown && isAtTop) || (isScrollingUp && isAtBottom)) {
+          e.preventDefault();
+        }
+      }
+    };
+
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+      document.addEventListener("touchstart", handleTouchStart);
+      document.removeEventListener("touchmove", handleTouchMove);
+    }
+  }, [isOpen]);
+
   if (!isOpen) return null; // No renderizar nada si no está abierto
 
   return (
     <div
-      className="modal fixed inset-0 flex items-center justify-center bg-black bg-opacity-60 z-50"
+      className="modal fixed inset-0 flex items-center justify-center bg-gray-700 bg-opacity-30 z-50"
       onClick={onClose} // Cierra el modal si haces clic fuera del contenido
     >
       <div
-        className="modal-content bg-gray-950 p-6 rounded-lg shadow-lg max-w-6xl h-full w-full"
+        className="modal-content m-auto bg-black bg-opacity-90 p-6 rounded-3xl shadow-lg max-w-6xl w-full"
         onClick={(e) => e.stopPropagation()} // Evita que el clic en el contenido cierre el modal
       >
         <button
-          className="close text-red-600 text-xl float-right font-bold"
+          className="close text-red-400 text-xl float-right font-bold"
           onClick={onClose}
         >
           &times;

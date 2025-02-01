@@ -1,122 +1,168 @@
 {
-    "proyectos": [
-        {
-            "id":1,
-            "nombre": "CRM Usuarios",
-            "imagenes": "projectsImg/crmUsuarios/",
-            "techStack": ["php", "html", "bootstrap", "javascript"],
-            "descripcion": "CRM Hecho con el patron de diseño Modelo Vista Controlador y programacion orientada a objetos. ", 
-            "enlace": ""
-        },
-        {
-            "id":2,
-            "nombre": "CRM pacientes de veterinaria",
-            "imagenes": "projectsImg/crmApv/",
-            "techStack": ["html", "react", "tailwind", "javascript", "express"],
-            "descripcion": "CRM Hecho con el patron de diseño Modelo Vista Controlador y programacion orientada a objetos. ", 
-            "enlace": "https://apv-frontend-eight-kappa.vercel.app/"
-        },
-        {
-            "id":3,
-            "nombre": "CRM Bienesraices",
-            "imagenes": "projectsImg/BienesRaices/",
-            "techStack": ["html", "react", "tailwind", "javascript", "express"],
-            "descripcion": "CRM Hecho con el patron de diseño Modelo Vista Controlador y programacion orientada a objetos. ", 
-            "enlace": ""
-        }
-    ],
-
-    "skills": [
+  "proyectos": [
     {
-        "id": 1,
-        "nombre": "HTML",
-        "imagen": "/skills/html.svg",
-        "bgColor": "#E44D26"
+      "id": 1,
+      "nombre": "Sistema para control de usuarios",
+      "imagenes": "projectsImg/crmUsuarios/",
+      "techStack": ["php", "html", "bootstrap", "javascript"],
+      "descripcion": [
+        "Desarrolle el sistema con base en el patrón de diseño MVC y programación orientada a objetos.",
+        "Integre SweetAlerts para el manejo de alertas al usuario, algunas de ellas informando errores, ejecución de funciones con éxito, alertas al validar formularios, confirmación de cambios y envío de formularios.",
+        "Implemente interfaz dinámica acorde al usuario que se encuentre en sesión, por lo que solo el administrador puede registrar, eliminar y listar a todos los usuarios, y modificar los datos del registro.",
+        "Las vistas contienen validaciones para restringir el acceso a usuarios no registrados.",
+        "Desarrolle el control de usuarios implementando borrado de forma lógica, para evitar la pérdida permanente de usuarios."
+      ],
+      "enlace": ""
     },
     {
-        "id": 2,
-        "nombre": "CSS",
-        "imagen": "/skills/css.svg",
-        "bgColor": "#1572B6"
+      "id": 2,
+      "nombre": "Portafolio web",
+      "imagenes": "projectsImg/portafolioImg/",
+      "techStack": ["html", "react", "tailwind", "javascript", "css"],
+      "descripcion": [
+        "Desarrolle esta pagina web para mostrar mis proyectos mas detacables y aplicar mis conocimientos sobre diseño web",
+        "En este proyecto implemente la libreria TrheeJS, que permite programar con JavaScript escenarios 3D, y modificar los parametros de cada uno de sus componentes",
+        "El diseño del proyecto fue hecho con Tailwind y CSS; para lograr un diseño atractivo, dinamico y ajustable a todo tipo de dispositivos",
+        "Utilice React como framework para tener un gran rendimiento, escalabilidad y manejo de recursos y eventos con sus componentes."
+      ],
+      "enlace": "https://portafolio-rho-rouge.vercel.app"
     },
     {
-        "id": 3,
-        "nombre": "JavaScript",
-        "imagen": "/skills/javascript.svg",
-        "bgColor": "#F7DF1E"
+      "id": 3,
+      "nombre": "CRUD pacientes de veterinaria",
+      "imagenes": "projectsImg/crmApv/",
+      "techStack": ["html", "react", "tailwind", "javascript", "express"],
+      "descripcion": [
+        "Desarrolle el sistema con base en el patrón de diseño MVC y programación orientada a objetos.",
+        "Integre SweetAlerts para el manejo de alertas al usuario, algunas de ellas informando errores, ejecución de funciones con éxito, alertas al validar formularios, confirmación de cambios y envío de formularios.",
+        "Implemente interfaz dinámica acorde al usuario que se encuentre en sesión, por lo que solo el administrador puede registrar, eliminar y listar a todos los usuarios, y modificar los datos del registro.",
+        "Las vistas contienen validaciones para restringir el acceso a usuarios no registrados.",
+        "Desarrolle el control de usuarios implementando borrado de forma lógica, para evitar la pérdida permanente de usuarios."
+      ],
+      "enlace": "https://apv-frontend-eight-kappa.vercel.app/"
     },
     {
-        "id": 4,
-        "nombre": "React",
-        "imagen": "/skills/react.svg",
-        "bgColor": "#61DAFB"
+      "id": 4,
+      "nombre": "Pagina de Bienesraices",
+      "imagenes": "projectsImg/BienesRaices/",
+      "techStack": ["html", "react", "tailwind", "javascript", "express"],
+      "descripcion": [
+        "Diseñe el sistema con el patrón MVC y POO, para un mejor control de la información de propiedades y usuarios.",
+        "Implemente con JS  modo oscuro en la interfaz acorde a las preferencias de navegación del usuario y un botón para cambiar de forma manual para facilitar la visibilidad.",
+        "Desarrolle la página con seguridad en las secciones, para que solo los usuarios registrados tengan acceso a crear o administrar  propiedades.",
+        "La pagina principal muestra propiedades registradas con una sección para revisar a detalle la información o ver todas las propiedades disponibles",
+        "Implemente una vista donde los usuarios administradores de la pagina podran iniciar sesion y administrar las propiedades que se muestran en la pagina."
+      ],
+      "enlace": ""
     },
     {
-        "id": 5,
-        "nombre": "PHP",
-        "imagen": "/skills/php.svg",
-        "bgColor": "#787CB5"
+      "id": 5,
+      "nombre": "Cotizador de prestamos",
+      "imagenes": "projectsImg/simuladorPres/",
+      "techStack": ["html", "react", "tailwind", "javascript"],
+      "descripcion": [
+        "Esta página es muestra de una función para paginas web que simula un cotizador de préstamos.",
+        "El diseño es intuitivo y responsivo para funcionar en todos los dispositivos, facilitando su acceso.",
+        "Desarrolle la página con hooks como: UseState, y UseEffect."
+      ],
+      "enlace": "https://simulador-prestamos331.netlify.app/"
     },
     {
-        "id": 6,
-        "nombre": "Node",
-        "imagen": "/skills/node.svg",
-        "bgColor": "#339933"
-    },
-    {
-        "id": 7,
-        "nombre": "Tailwind",
-        "imagen": "/skills/tailwind.svg",
-        "bgColor": "#06B6D4"
-    },
-    {
-        "id": 8,
-        "nombre": "Bootstrap",
-        "imagen": "/skills/bootstrap.svg",
-        "bgColor": "#7952B3"
-    },
-    {
-        "id": 9,
-        "nombre": "Mysql",
-        "imagen": "/skills/mysql.svg",
-        "bgColor": "#00758F"
-    },
-    {
-        "id": 10,
-        "nombre": "Mongo",
-        "imagen": "/skills/mongodb.svg",
-        "bgColor": "#47A248"
-    },
-    {
-        "id": 11,
-        "nombre": "Github",
-        "imagen": "/skills/github.svg",
-        "bgColor": "#c6c6c6"
-    },
-    {
-        "id": 12,
-        "nombre": "Linux",
-        "imagen": "/skills/linux.svg",
-        "bgColor": "#FCC624"
-    },
-    {
-        "id": 13,
-        "nombre": "Vercel",
-        "imagen": "/skills/vercel.svg",
-        "bgColor": "#70639b"
-    },
-    {
-        "id": 14,
-        "nombre": "VS Code",
-        "imagen": "/skills/vscode.svg",
-        "bgColor": "#007ACC"
-    },
-    {
-        "id": 15,
-        "nombre": "Express",
-        "imagen": "/skills/express.svg",
-        "bgColor": "#007ACC"
+      "id": 6,
+      "nombre": "Calculadora de calorias",
+      "imagenes": "projectsImg/contadorCalorias/",
+      "techStack": ["html", "react", "tailwind", "javascript"],
+      "descripcion": [
+        "Proyecto para control de consumo calórico y registro de ejercicios diarios."
+      ],
+      "enlace": "https://calorie-tracker-by-casv.netlify.app/"
     }
-]
+  ],
 
+  "skills": [
+    {
+      "id": 1,
+      "nombre": "HTML",
+      "imagen": "/skills/html.svg",
+      "bgColor": "#E44D26"
+    },
+    {
+      "id": 2,
+      "nombre": "CSS",
+      "imagen": "/skills/css.svg",
+      "bgColor": "#1572B6"
+    },
+    {
+      "id": 3,
+      "nombre": "JavaScript",
+      "imagen": "/skills/javascript.svg",
+      "bgColor": "#F7DF1E"
+    },
+    {
+      "id": 4,
+      "nombre": "React",
+      "imagen": "/skills/react.svg",
+      "bgColor": "#61DAFB"
+    },
+    {
+      "id": 5,
+      "nombre": "PHP",
+      "imagen": "/skills/php.svg",
+      "bgColor": "#787CB5"
+    },
+    {
+      "id": 6,
+      "nombre": "Node",
+      "imagen": "/skills/node.svg",
+      "bgColor": "#339933"
+    },
+    {
+      "id": 7,
+      "nombre": "Tailwind",
+      "imagen": "/skills/tailwind.svg",
+      "bgColor": "#06B6D4"
+    },
+    {
+      "id": 8,
+      "nombre": "Bootstrap",
+      "imagen": "/skills/bootstrap.svg",
+      "bgColor": "#7952B3"
+    },
+    {
+      "id": 9,
+      "nombre": "Mysql",
+      "imagen": "/skills/mysql.svg",
+      "bgColor": "#00758F"
+    },
+    {
+      "id": 10,
+      "nombre": "Mongo",
+      "imagen": "/skills/mongodb.svg",
+      "bgColor": "#47A248"
+    },
+    {
+      "id": 11,
+      "nombre": "Github",
+      "imagen": "/skills/github.svg",
+      "bgColor": "#c6c6c6"
+    },
+    {
+      "id": 12,
+      "nombre": "Linux",
+      "imagen": "/skills/linux.svg",
+      "bgColor": "#FCC624"
+    },
+    {
+      "id": 13,
+      "nombre": "Vercel",
+      "imagen": "/skills/vercel.svg",
+      "bgColor": "#70639b"
+    },
+    {
+      "id": 14,
+      "nombre": "VS Code",
+      "imagen": "/skills/vscode.svg",
+      "bgColor": "#007ACC"
+    }
+  ]
 }

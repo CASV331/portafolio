@@ -52,7 +52,7 @@ export default function Header() {
           </h1>
           <hr className="bg-white w-full h-0.5 md:h-1 mt-5" />
           <h2 className="mt-40 text-3xl md:text-4xl">Acerca de mi</h2>
-          <p className="text-white text-lg text-center m-auto max-w-4xl md:text-2xl">
+          <p className="text-white text-xl text-left m-auto max-w-4xl md:text-2xl">
             Soy un desarrollador web con más de un año de experiencia en diseño
             web y programación. He trabajado con tecnologías como HTML, CSS,
             JavaScript, Tailwind, Bootstrap y React para crear interfaces de
@@ -60,7 +60,7 @@ export default function Header() {
             de mis proyectos para manejo de paquetes y conexiones backend.
             Además, estoy constantemente ampliando mis conocimientos por lo que
             he desarrollado proyectos con PHP y he utilizado plataformas como
-            Vercel, Render y Netlify. Busco desafios done pueda aplicar mis
+            Vercel, Render y Netlify. Busco desafios donde pueda aplicar mis
             habilidades en un entorno colaborativo, y crecer como desarrollador
             contribuyendo al éxito del equipo.
           </p>

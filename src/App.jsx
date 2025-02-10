@@ -11,9 +11,6 @@ function App() {
   const { proyectos, skills } = db;
   return (
     <>
-      <BlackHole />
-      <Stars />
-      <Mouse />
       <main className="content">
         <Banner />
         <section className="skillSect text-center">
@@ -37,7 +34,7 @@ function App() {
                 key={project.id}
                 nombre={project.nombre}
                 techStack={project.techStack}
-                imagenes={project.imagenes}
+                rutaImg={project.rutaImg}
                 descripcion={project.descripcion}
                 enlace={project.enlace}
               />
@@ -45,6 +42,9 @@ function App() {
           </div>
         </section>
       </main>
+      <BlackHole />
+      <Stars />
+      <Mouse />
     </>
   );
 }

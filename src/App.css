@@ -9,19 +9,23 @@ canvas {
 }
 html, body {
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
   overflow-x: hidden;
   margin: 0;
   padding: 0;
 }
 main {
-  margin: 0px auto;
-  z-index: 10;
+  position: relative;
+  background: rgba(0,0,0,0);
+  z-index: 2;
+  min-height: 100vh;
 }
 body {
   background-color: transparent;
-  min-height: 350vh;
-  padding-bottom: env(safe-area-inset-bottom);
+  position: relative;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 h2 {
   font-size: 1.8rem;
@@ -45,7 +49,7 @@ h2 {
 }
 /** Modificaciones de listado de habilidades **/
 .skillSect{
-  margin-top: 20rem;
+  margin-top: 8rem;
 }
 .contenedorSkills{
   display: flex;
@@ -101,7 +105,7 @@ header {
 }
 .banner {
   background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 10px;
+  
   padding: 10px;
   text-shadow: 0 0 5px white;
 }
@@ -118,18 +122,23 @@ header {
 }
 
 /** Modificacion de ventana modal **/
-body.modal-open {
+/* body.modal-open {
   overflow: hidden;
   position: fixed;
   width: 100%;
   height: 100%;
-}
+} */
+
 .modal-content {
-  max-height: 90vh;
   overflow-y: auto;
   overscroll-behavior: contain;
-  scrollbar-width: thin;
+  max-height: 90vh;
+  /* scrollbar-width: thin;
   scrollbar-color: rgba(255,255,255, 0.4) transparent;
+  @media (min-width: 768px) {
+    max-height: 90vh;
+
+} */
 }
 .modal-content::-webkit-scrollbar {
   width: 6px;

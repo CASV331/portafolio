@@ -34,7 +34,6 @@ function Projects({ nombre, rutaImg, techStack, descripcion, enlace }) {
         }
       }
       setImages(validImages);
-      console.log("Imagenes validas", validImages);
     };
 
     loadImages();
@@ -153,7 +152,7 @@ function Projects({ nombre, rutaImg, techStack, descripcion, enlace }) {
               rel="noopener noreferrer"
               className="block max-w-xl bg-gray-300 text-gray-950 text-center px-4 py-2 rounded mt-4 hover:bg-gray-400 transition"
             >
-              Ver Proyecto
+              Visitar Proyecto
             </a>
           )}
           <button

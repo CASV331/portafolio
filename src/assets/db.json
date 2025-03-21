@@ -2,6 +2,19 @@
   "proyectos": [
     {
       "id": 1,
+      "nombre": "ColorPal",
+      "rutaImg": "projectsImg/colorPal/",
+      "techStack": ["javascript", "react", "tailwind"],
+      "descripcion": [
+        "Desarrolle ColorPal como una herramienta que sea util para el diseño de interfaz de mis paginas, teniendo un vistazo al contraste con los colores que tengo en mente.",
+        "Realice contextos dentro de la aplicacion para el manejo global del color e integrar cambios en tiempo real.",
+        "La accesibilidad es importante al desarrollar, por lo que la aplicacion cuenta con calificacion de contraste basada en WCAG para elegir la combinacion de colores mas adecuada.",
+        "El diseño es totalmente responsivo y amigable con el usuario."
+      ],
+      "enlace": "https://color-pal.vercel.app/"
+    },
+    {
+      "id": 2,
       "nombre": "Sistema para control de usuarios",
       "rutaImg": "projectsImg/crmUsuarios/",
       "techStack": ["php", "html", "bootstrap", "javascript"],
@@ -13,58 +26,6 @@
         "Desarrolle el control de usuarios implementando borrado de forma lógica, para evitar la pérdida permanente de usuarios."
       ],
       "enlace": ""
-    },
-    {
-      "id": 2,
-      "nombre": "CRM pacientes de veterinaria",
-      "rutaImg": "projectsImg/crmApv/",
-      "techStack": ["html", "react", "tailwind", "javascript", "express"],
-      "descripcion": [
-        "Desarrolle el sistema con base en el patrón de diseño MVC y programación orientada a objetos.",
-        "Integre SweetAlerts para el manejo de alertas al usuario, algunas de ellas informando errores, ejecución de funciones con éxito, alertas al validar formularios, confirmación de cambios y envío de formularios.",
-        "Implemente interfaz dinámica acorde al usuario que se encuentre en sesión, por lo que solo el administrador puede registrar, eliminar y listar a todos los usuarios, y modificar los datos del registro.",
-        "Las vistas contienen validaciones para restringir el acceso a usuarios no registrados.",
-        "Desarrolle el control de usuarios implementando borrado de forma lógica, para evitar la pérdida permanente de usuarios.",
-        "Correo de usuario: correo@correo.com",
-        "Clave de acceso: 123456"
-      ],
-      "enlace": "https://apv-frontend-eight-kappa.vercel.app/"
-    },
-    {
-      "id": 3,
-      "nombre": "Pagina de Bienesraices",
-      "rutaImg": "projectsImg/BienesRaices/",
-      "techStack": ["html", "react", "tailwind", "javascript", "express"],
-      "descripcion": [
-        "Diseñe el sistema con el patrón MVC y POO, para un mejor control de la información de propiedades y usuarios.",
-        "Implemente con JS  modo oscuro en la interfaz acorde a las preferencias de navegación del usuario y un botón para cambiar de forma manual para facilitar la visibilidad.",
-        "Desarrolle la página con seguridad en las secciones, para que solo los usuarios registrados tengan acceso a crear o administrar  propiedades.",
-        "La pagina principal muestra propiedades registradas con una sección para revisar a detalle la información o ver todas las propiedades disponibles",
-        "Implemente una vista donde los usuarios administradores de la pagina podran iniciar sesion y administrar las propiedades que se muestran en la pagina."
-      ],
-      "enlace": ""
-    },
-    {
-      "id": 4,
-      "nombre": "Cotizador de prestamos",
-      "rutaImg": "projectsImg/simuladorPres/",
-      "techStack": ["html", "react", "tailwind", "javascript"],
-      "descripcion": [
-        "Esta página es muestra de una función para paginas web que simula un cotizador de préstamos.",
-        "El diseño es intuitivo y responsivo para funcionar en todos los dispositivos, facilitando su acceso.",
-        "Desarrolle la página con hooks como: UseState, y UseEffect."
-      ],
-      "enlace": "https://simulador-prestamos331.netlify.app/"
-    },
-    {
-      "id": 5,
-      "nombre": "Calculadora de calorias",
-      "rutaImg": "projectsImg/contadorCalorias/",
-      "techStack": ["html", "react", "tailwind", "javascript"],
-      "descripcion": [
-        "Proyecto para control de consumo calórico y registro de ejercicios diarios."
-      ],
-      "enlace": "https://calorie-tracker-by-casv.netlify.app/"
     }
   ],
 

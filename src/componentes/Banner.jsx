@@ -52,7 +52,7 @@ export default function Header() {
           </h1>
           <hr className="bg-white w-full h-0.5 md:h-1 mt-5" />
           <h2 className="mt-40 text-3xl md:text-4xl">Acerca de mi</h2>
-          <p className="text-white text-xl text-left m-auto max-w-4xl md:text-2xl">
+          <p className="text-white text-xl text-left m-auto max-w-4xl md:text-xl">
             Soy un desarrollador web con más de un año de experiencia en diseño
             web y programación. He trabajado con tecnologías como HTML, CSS,
             JavaScript, Tailwind, Bootstrap y React para crear interfaces de
